@@ -6,6 +6,8 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
 
+
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,8 +18,15 @@ class MainActivity : AppCompatActivity() {
         }
         deleteAll.setOnClickListener {
             DataObject.deleteAll()
+            setRecycler()
         }
 
+        setRecycler()
+
+
+    }
+
+    fun setRecycler() {
         recycler_view.adapter = Adapter(DataObject.getAllData())
         recycler_view.layoutManager = LinearLayoutManager(this)
     }

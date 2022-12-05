@@ -1,7 +1,7 @@
 package com.example.finalproject2
 
 import android.content.Intent
-import android.app.TaskInfo
+
 import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View

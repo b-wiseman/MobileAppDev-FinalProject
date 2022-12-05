@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="20dp"
-    tools:context=".CreateCard">
+    tools:context=".CreateTask">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
         android:layout_marginTop="20dp"
         android:hint="Enter Priority"
         android:padding="15dp"
-        android:background="@drawable/custom_edittetext"
+        android:background="@drawable/edit_text"
         android:textColorHint="#BFBBBB"
         android:textColor="@color/white"
         />
