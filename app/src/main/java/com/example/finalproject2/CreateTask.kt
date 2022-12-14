@@ -24,8 +24,8 @@ class CreateTask : AppCompatActivity(){
             if(create_title.text.toString().trim{it<=' '}.isNotEmpty()
                 && create_priority.text.toString().trim{it<=' '}.isNotEmpty())
             {
-                var title=create_title.getText().toString()
-                var priority=create_priority.getText().toString()
+                var title = create_title.getText().toString()
+                var priority = create_priority.getText().toString()
                 DataObject.setData(title, priority)
                 GlobalScope.launch{
                     database.dao().insertTask(Entity(0, title, priority))
